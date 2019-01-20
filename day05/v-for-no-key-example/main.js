@@ -1,6 +1,11 @@
 new Vue({
-  el: '#app',
+  el: "#app",
   data: {
-    numbers: [1, 10, 100, 1000, 1000],
+    numbers: [1, 10, 100, 1000, 10000]
   },
+  methods: {
+    shuffle() {
+      this.numbers = _.shuffle(this.numbers);
+    }
+  }
 });
