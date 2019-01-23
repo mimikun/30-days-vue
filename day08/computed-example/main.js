@@ -5,6 +5,7 @@ new Vue({
   },
   computed: {
     reverseMessage() {
+      console.log('computed function is run!');
       return this.message.split("").reverse().join("");
     },
   }
