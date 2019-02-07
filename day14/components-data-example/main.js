@@ -1,5 +1,5 @@
 let counterOne = {
-  templete: `
+  template: `
     <button class="component-button" @click="counter++">
       You clicked me {{counter}} times
     </button>
@@ -12,7 +12,7 @@ let counterOne = {
 }
 
 let counterTwo = {
-  templete: `
+  template: `
     <button class="component-button" @click="counter++">
       You clicked me {{counter}} times
     </button>
@@ -25,7 +25,7 @@ let counterTwo = {
 }
 
 let counterThree = {
-  templete: `
+  template: `
     <button class="component-button" @click="counter++">
       You clicked me {{counter}} times
     </button>

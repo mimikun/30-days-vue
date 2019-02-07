@@ -6,55 +6,20 @@ html, body {
 
 #app {
   height: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  max-width: 1000px;
+  padding: 12px;
 }
 
-#app .button {
-  margin-bottom: 20px;
+p {
+  padding-bottom: 5px;
 }
 
-#app .tweet {
-  width: 500px;
-  margin: 0 auto;
-  padding-bottom: 15px;
-}
-
-#app .box {
-  margin-bottom: 0;
-  border-radius: 0;
-}
-
-#app .content small {
-  color: #00d1b2;
-}
-
-#app img {
-  border-radius: 30px;
-}
-
-#app .level-item {
-  padding-left: 10px;
-  justify-content: flex-start;
-  display: inline;
-  color: #00d1b2;
-}
-
-#app input:focus {
-  border-color: #00d1b2;
-}
-
-#app .likes {
-  padding: 0 7.5px;
-}
-
-#app input {
-  font-weight: bold;
-}
-
-#app .tweets-move {
-  transition: transform 1s;
+.component-button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #00d1b2;
+  color: #FFF;
+  padding: 5px;
+  border-radius: 3px;
+  cursor: pointer;
 }
