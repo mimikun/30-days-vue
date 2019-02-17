@@ -4,10 +4,10 @@
     has-text-white">
     <div class="card-image">
       <div class="card-image-container">
-        <img src="../../static/charizard.png" />
+        <img src="../../static/charizard.png"/>
       </div>
     </div>
-    <div class="card-content has-text-centerd">
+    <div class="card-content has-text-centered">
       <div class="main">
         <div class="title has-text-white">Charizard</div>
         <div class="hp">hp 78</div>
