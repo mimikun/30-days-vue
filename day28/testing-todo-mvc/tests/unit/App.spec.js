@@ -10,18 +10,17 @@ describe('App', () => {
 
   it('should render correct contents', () => {
     let wrapper = shallowMount(App);
-
     expect(wrapper.find('.title').text())
       .toBe('todos');
     expect(wrapper.find('.new-todo').element.placeholder)
       .toBe('What needs to be done?');
   });
-
+  
   it('should set correct default data', () => {
     expect(wrapper.vm.todos).toEqual([]);
     expect(wrapper.vm.newTodo).toEqual('');
   });
-
+  
   describe('user populates the text input field', () => {
     let inputField;
 
@@ -43,12 +42,12 @@ describe('App', () => {
     });
 
     describe('and presses Enter + removes todo', () => {
-      it('should have the new todo removed', () =>{
-        inputField.trigger('keyup.enter');
-        const removeIcon = wrapper.find('.destroy');
-
-        removeIcon.trigger('click');
-
+      it('should have the new todo removed', () => {
+        inputField.trigger("keyup.enter");
+        const removeIcon = wrapper.find(".destroy");
+        
+        removeIcon.trigger("click");
+        
         expect(wrapper.vm.todos).toEqual([]);
       });
     });
